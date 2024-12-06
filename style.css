@@ -35,15 +35,22 @@ html, body {
     margin-top: 10px;
 }
 
-/* Campo de búsqueda y botón */
+/* Campo de búsqueda */
 #search-input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 200px;
     max-width: 80%;
+    transition: border-color 0.3s ease;
 }
 
+#search-input:focus {
+    outline: none;
+    border-color: #ff6b6b;
+}
+
+/* Botón de búsqueda */
 #search-button {
     padding: 8px 12px;
     border: none;
@@ -51,11 +58,12 @@ html, body {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #search-button:hover {
     background-color: #e55a5a;
+    transform: scale(1.05);
 }
 
 /* Navegación */
